@@ -22,6 +22,12 @@ on:
       hanuman_idempotency_key_hash:
         required: false
         type: string
+  push:
+    branches:
+      - 'sonar/auto-fix-confidence-gated'
+      - 'sonar/**'
+      - 'sonar/auto-fix-confidence-gated'
+
 jobs:
   sonarcloud:
     runs-on: ubuntu-latest
