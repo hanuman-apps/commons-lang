@@ -22,15 +22,6 @@ on:
       hanuman_idempotency_key_hash:
         required: false
         type: string
-<<<<<<< HEAD
-=======
-  push:
-    branches:
-      - 'sonar/auto-fix-confidence-gated'
-      - 'sonar/**'
-      - 'sonar/auto-fix-confidence-gated'
-
->>>>>>> 601d33b1b (Hanuman managed workflow capability patch)
 jobs:
   sonarcloud:
     runs-on: ubuntu-latest
